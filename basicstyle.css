@@ -1,0 +1,399 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  ;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 3.5rem;
+  width: 80%;
+  color: white;
+  /*margin:10%;*/
+  padding-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*----------Navigation-------*/
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 15px;
+  padding: 0 5%;
+}
+.hidden-element{
+  visibility: hidden;
+}
+
+/*-------common------*/
+.section-heading {
+  color: #2857a4;
+}
+.horizontal-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+}
+.allblockletters{
+  text-transform:uppercase;
+}
+.leftalign{
+  text-align: left;
+}
+.padded{
+  padding: 3% 0;
+}
+.text-center {
+  text-align: center;
+}
+
+.horizontal-list li a {
+  width: 40px;
+  height: 40px;
+}
+
+.horizontal-list li a i {
+  padding: 10%;
+}
+
+.horizontal-list li a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  height: 100%;
+}
+
+.horizontal-list li a:hover {
+  transition: border 0.2s ease-out;
+  color: #1c2b2d;
+  border-bottom: 5px dotted #1c2b2d;
+}
+
+.horizontal-list li a i:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 4px #1c2b2d;
+}
+
+/*----------Header----------*/
+main {
+  width: 100%;
+}
+
+.body-header {
+  height: 450px;
+  background-image: url(https://lh3.googleusercontent.com/pw/ACtC-3clG1zOSmG3FA6gIJybiMvGsspTispheljPdcydARcHNAzygf69qBg1GjFQIfHS5_Mh2Afeitfp00x92_YjdnJlgKMSAYcIbTCPJspmeIaEeattepPalwkA92pw65q38Fm-OxkR9SiA98l9GVMtyIg=w958-h638-no?authuser=0);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0px;
+}
+
+.header-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: auto;
+  opacity: 60%;
+}
+
+.socialmedia {
+  width: 100%;
+  padding: 2% 0px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  position: static;
+}
+
+.socialmedia ul li {
+  padding: 0px 10px;
+}
+
+.socialmedia ul li a:hover {
+  border-bottom: 0px;
+  color: white;
+}
+
+.socialmedia ul li a i {
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+}
+
+.socialmedia li a i:hover {
+  transition: box-shadow 0.5s ease-out;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 4px white;
+}
+
+/*---------main--------*/
+main {
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  margin-top: -12%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 1px 1px 10px 4px lightgrey;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+
+#about {
+  text-align: center;
+  margin: auto;
+}
+
+#about p {
+  color: #2857a4;
+  text-align: justify;
+  width: 75%;
+  padding: 4% 0px;
+  margin: auto;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  word-spacing: 0.1rem;
+  font-weight: 300;
+}
+
+/*---------Skills---------*/
+#skills {
+  width: 100%;
+  display: inline-block;
+}
+
+#skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.outerbox {
+  background-color: #9399ff;
+  width: 250px;
+  height: 50px;
+  border-radius: 0.8rem;
+  margin: 3%;
+  box-shadow: 2px 2px 8px 1px darkgrey;
+}
+
+.outerbox span {
+  font-size: 1.2rem;
+  line-height: 50px;
+}
+
+.progress {
+  background-color: #111d5e;
+  height: 50px;
+  border-radius: 0.8rem;
+}
+
+.html {
+  width: 90%;
+}
+
+.css {
+  width: 90%;
+}
+
+.javascript {
+  width: 80%;
+}
+
+.java, .python {
+  width: 90%;
+}
+
+.androidstudio {
+  width: 60%;
+}
+
+/*--------Education---------*/
+#education {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+}
+
+.education-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.boxes {
+  position: relative;
+  background-image: linear-gradient(-90deg,#2857a4, #9399ff);
+  box-shadow: 2px 2px 8px 2px darkgrey;
+  width: 40%;
+  height: 40%;
+  margin: 5%;
+}
+
+.boxes:nth-child(2n) {
+  background-image: linear-gradient(-90deg,#2857a4, #9399ff);
+  position: relative;
+  left: 50%;
+}
+
+#timeline {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  height: 70%;
+  width: 0px;
+  border: 3px dashed darkgrey;
+}
+
+.institute-logo {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+}
+
+.pointer {
+  color: #2857a4;
+  margin-left: -16px;
+  position: sticky;
+  top: 20%;
+  left: 50%;
+}
+
+.pointer i{
+  width: 7px;
+  height: 7px;
+  font-size: 1.5rem;
+}
+
+/*--------Contact--------*/
+#contact{
+  position: relative;
+  background-image: linear-gradient(45deg, #2857a4, #403066 120%);
+}
+.details-container{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contact-form {
+  position:relative;
+  width:40%;
+  height: auto;
+  height:100%;
+}
+.form-input{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  padding: 3% 0;
+  width: 70%;
+  margin: auto;
+  padding-left: 20%;
+}
+.details{
+  padding: 0 2%;
+  width:40%;
+}
+.input{
+  color: white;
+  width: 100%;
+  height: 20px;
+  line-height: 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  padding: 4% 0;
+  margin: 2% 0;
+  border: 0;
+  border-bottom: 2px solid white;
+  border-radius: 2%;
+}
+.form-input textarea{
+  height:50px;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+.contact-form button[type="submit"]{
+  background-color: transparent;
+  width:60%;
+  height: 50px;
+  line-height: 1.2rem;
+  border: 2px solid white;
+  margin: auto;
+  color: white;
+}
+.details h4{
+  margin-top: 0;
+}
+/*---------Portfolio---------*/
+#portfolio{
+  width:100%;
+  position: relative;
+}
+.portfolio-container{
+  position: relative;
+  height: auto;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.portfolio-boxes{
+  position: relative;
+  background-image: linear-gradient(-90deg,#2857a4, #9399ff);
+  width: 70%;
+  height: auto;
+  margin:auto;
+  margin-bottom: 3%;
+  text-align: left;
+  padding-left: 5%;
+  border-radius: 0.5rem;
+}
+#timeline-portfolio{
+  position: absolute;
+  top: 0;
+  left: 10%;
+  height: 80%;
+  width: 0px;
+  border: 3px dashed darkgrey;
+}
+.pointer-portfolio{
+  color: #2857a4;
+  margin-left: -16px;
+  position: sticky;
+  top: 40%;
+  left: 50%;
+}
+.pointer-portfolio i{
+  width: 7px;
+  height: 7px;
+  font-size: 1.5rem;
+}
+.highlight{
+}
+.project-date{
+  font-size:1rem;
+}
