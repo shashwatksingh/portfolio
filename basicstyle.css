@@ -71,6 +71,7 @@ h1 {
 }
 
 .horizontal-list li a:hover {
+  transition: border 0.3s ease-in-out;
   color: #1c2b2d;
   border-bottom: 5px dotted #1c2b2d;
 }
@@ -93,7 +94,9 @@ main {
   background-size: cover;
   margin: 0px;
 }
-
+.hidden-element{
+  display: none;
+}
 .header-image-container {
   position: absolute;
   top: 0;
@@ -129,6 +132,7 @@ main {
 
 .socialmedia li a i:hover {
   border-radius: 50%;
+  transition: box-shadow 0.5s ease-in-out;
   box-shadow: 0px 0px 6px 4px white;
 }
 
@@ -205,15 +209,15 @@ main {
 }
 
 .html {
-  width: 90%;
+  width: 95%;
 }
 
 .css {
-  width: 90%;
+  width: 95%;
 }
 
 .javascript {
-  width: 50%;
+  width: 95%;
 }
 
 .java, .python {
@@ -222,6 +226,9 @@ main {
 
 .androidstudio {
   width: 60%;
+}
+.nodejs{
+  width: 90%;
 }
 
 /*--------Education---------*/

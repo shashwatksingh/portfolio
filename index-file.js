@@ -29,17 +29,19 @@ function initialiseBars() {
   }
 }
 initialiseBars();
-
 /*function initialiseBar(bar) {
   bar.style.width = 0 + "%";
 }*/
 function whichToBeUpdated(n) {
-  if (last==6){
+  if (last==7){
     ctr++;
   }
   let indexes = n - 1;
-  if (last < indexes) {
+  console.log(indexes);
+  if (last <=indexes) {
     updateIndex = indexes - last;
+    console.log(updateIndex);
+    console.log("calling fillbar");
     fillBar(updateIndex);
   } else if (ctr>0 && indexes==-1) {
     //updateIndex = last - indexes;
@@ -52,6 +54,7 @@ function whichToBeUpdated(n) {
 
 function fillBar(n) {
   for (let i = 0; i <= n; i++) {
+    //console.log(last +"last");
     let bar = progressBars[last];
     let targetWidth = bar.getAttribute('data-bar-width');
     let currentWidth = 0;
@@ -69,7 +72,7 @@ function fillBar(n) {
 }
 //function allVisible()
 function checkScroll() {
-  var visiNum = 0;
+  let visiNum = 0;
   for (let i = 0; i < progressBars.length; i++) {
     let bars = progressBars[i];
     var coordinates = bars.getBoundingClientRect();
