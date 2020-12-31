@@ -26,9 +26,6 @@ h1 {
   top: 15px;
   padding: 0 5%;
 }
-.hidden-element{
-  visibility: hidden;
-}
 
 /*-------common------*/
 .section-heading {
@@ -74,7 +71,6 @@ h1 {
 }
 
 .horizontal-list li a:hover {
-  transition: border 0.2s ease-out;
   color: #1c2b2d;
   border-bottom: 5px dotted #1c2b2d;
 }
@@ -132,7 +128,6 @@ main {
 }
 
 .socialmedia li a i:hover {
-  transition: box-shadow 0.5s ease-out;
   border-radius: 50%;
   box-shadow: 0px 0px 6px 4px white;
 }
@@ -183,7 +178,7 @@ main {
   display: inline-block;
 }
 
-#skills-content {
+.skills-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -218,7 +213,7 @@ main {
 }
 
 .javascript {
-  width: 80%;
+  width: 50%;
 }
 
 .java, .python {
@@ -289,21 +284,22 @@ main {
 }
 
 /*--------Contact--------*/
-#contact{
+#contactme{
   position: relative;
   background-image: linear-gradient(45deg, #2857a4, #403066 120%);
 }
 .details-container{
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 .contact-form {
   position:relative;
-  width:40%;
+  display: inline-block;
+  padding: 2%;
+  width:50%;
   height: auto;
-  height:100%;
+  height:100%
 }
 .form-input{
   display:flex;
@@ -316,16 +312,15 @@ main {
 }
 .details{
   padding: 0 2%;
-  width:40%;
+  width:50%;
 }
 .input{
   color: white;
   width: 100%;
   height: 20px;
   line-height: 2rem;
-  font-size: 1rem;
   background-color: transparent;
-  padding: 4% 0;
+  padding: 3% 0;
   margin: 2% 0;
   border: 0;
   border-bottom: 2px solid white;
@@ -333,20 +328,14 @@ main {
 }
 .form-input textarea{
   height:50px;
-  line-height: 2rem;
-  font-size: 1rem;
 }
 .contact-form button[type="submit"]{
   background-color: transparent;
   width:60%;
-  height: 50px;
-  line-height: 1.2rem;
+  height: 40px;
   border: 2px solid white;
   margin: auto;
   color: white;
-}
-.details h4{
-  margin-top: 0;
 }
 /*---------Portfolio---------*/
 #portfolio{
