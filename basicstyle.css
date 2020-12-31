@@ -178,7 +178,7 @@ main {
   display: inline-block;
 }
 
-.skills-content {
+#skills-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -284,7 +284,7 @@ main {
 }
 
 /*--------Contact--------*/
-#contactme{
+#contact{
   position: relative;
   background-image: linear-gradient(45deg, #2857a4, #403066 120%);
 }
