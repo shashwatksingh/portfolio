@@ -207,6 +207,9 @@ main {
   height: 50px;
   border-radius: 0.8rem;
 }
+.project-link a{
+  color: white;
+}
 
 .html {
   width: 95%;

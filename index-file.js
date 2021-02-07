@@ -33,7 +33,7 @@ initialiseBars();
   bar.style.width = 0 + "%";
 }*/
 function whichToBeUpdated(n) {
-  if (last==7){
+  if (last==10){
     ctr++;
   }
   let indexes = n - 1;
