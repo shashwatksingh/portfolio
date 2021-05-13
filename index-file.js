@@ -33,19 +33,15 @@ initialiseBars();
   bar.style.width = 0 + "%";
 }*/
 function whichToBeUpdated(n) {
-  if (last==10){
+  if (last==11){
     ctr++;
   }
   let indexes = n - 1;
-  console.log(indexes);
   if (last <=indexes) {
     updateIndex = indexes - last;
-    console.log(updateIndex);
-    console.log("calling fillbar");
     fillBar(updateIndex);
   } else if (ctr>0 && indexes==-1) {
     //updateIndex = last - indexes;
-    console.log("inside refresh");
     initialiseBars();
     ctr=0;
     last=0;
@@ -54,7 +50,6 @@ function whichToBeUpdated(n) {
 
 function fillBar(n) {
   for (let i = 0; i <= n; i++) {
-    //console.log(last +"last");
     let bar = progressBars[last];
     let targetWidth = bar.getAttribute('data-bar-width');
     let currentWidth = 0;
@@ -76,8 +71,6 @@ function checkScroll() {
   for (let i = 0; i < progressBars.length; i++) {
     let bars = progressBars[i];
     var coordinates = bars.getBoundingClientRect();
-
-    //console.log(coordinates);
     var animDone = false;
     if (animDone == false && coordinates.top < window.innerHeight-100) {
       visiNum += 1;
