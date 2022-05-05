@@ -375,7 +375,7 @@ main {
   position: absolute;
   top: 0;
   left: 10%;
-  height: 80%;
+  height: 90%;
   width: 0px;
   border: 3px dashed darkgrey;
 }
@@ -392,7 +392,44 @@ main {
   font-size: 1.5rem;
 }
 .highlight{
+  font-weight: 700;
+  color: #fff;
 }
 .project-date{
   font-size:1rem;
+}
+
+/*---------Work Experience---------*/
+.work-experience-container{
+  position: relative;
+  height: auto;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.work-experience-container .portfolio-boxes ul {
+  margin-left: 0;
+  padding-left: 2.15%;
+  margin-bottom: 2.5%;
+}
+#timeline-experience{
+  position: absolute;
+  top: 0;
+  left: 10%;
+  height: 72%;
+  width: 0px;
+  border: 3px dashed darkgrey;
+}
+.pointer-experience{
+  color: #2857a4;
+  margin-left: -16px;
+  position: sticky;
+  top: 40%;
+  left: 50%;
+}
+.pointer-experience i{
+  width: 7px;
+  height: 7px;
+  font-size: 1.5rem;
 }
