@@ -46,4 +46,3 @@ You can visit the live version of the [portfolio](https://dineshshaw.in) website
    ```
    
 5. Open your browser and visit http://localhost:3000 to see the website in development mode.
-
