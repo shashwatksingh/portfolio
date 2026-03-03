@@ -6,16 +6,32 @@ import { GitHub, Instagram, Linkedin } from "react-feather";
 import GenericProjectImage from "../assets/paper.webp";
 
 import Javascript from "../assets/svg/javascript.svg";
+import TypeScript from "../assets/svg/typescript.svg";
+import Java from "../assets/svg/java.svg";
+import Go from "../assets/svg/go.svg";
+import Python from "../assets/svg/python.svg";
+import Node from "../assets/svg/node.svg";
+import NestJS from "../assets/svg/nestjs.svg";
+import Express from "../assets/svg/express.svg";
+import Spring from "../assets/svg/spring.svg";
 import React from "../assets/svg/react.svg";
 import NextJs from "../assets/svg/nextjs.svg";
+import MongoDB from "../assets/svg/mongodb.svg";
+import MySQL from "../assets/svg/mysql.svg";
+import PostgreSQL from "../assets/svg/postgresql.svg";
+import Redis from "../assets/svg/redis.svg";
+import Docker from "../assets/svg/docker.svg";
+import Kubernetes from "../assets/svg/kubernetes.svg";
+import AWS from "../assets/svg/aws.svg";
+import Kafka from "../assets/svg/kafka.svg";
+import GRPC from "../assets/svg/grpc.svg";
+import NGINX from "../assets/svg/nginx.svg";
+import Git from "../assets/svg/git.svg";
 import HTML from "../assets/svg/html.svg";
 import SCSS from "../assets/svg/scss.svg";
 import StyledComponents from "../assets/svg/styled-components.svg";
 import SemanticUI from "../assets/svg/semantic.svg";
 import Firebase from "../assets/svg/firebase.svg";
-import Express from "../assets/svg/express.svg";
-import Node from "../assets/svg/node.svg";
-import Git from "../assets/svg/git.svg";
 import { PenTool, Command, User } from "react-feather";
 
 export const humanizeDuration = (time) => {
@@ -159,6 +175,17 @@ export const blogsList = [
       "Learn how to leverage Go's goroutines, channels, and concurrency primitives to build robust, high-throughput payment processing systems with proper error handling and idempotency.",
     keywords: "Go,Golang,Concurrency,Goroutines,Channels,Payment Processing,Fintech,Idempotency,Error Handling,Distributed Systems",
   },
+  {
+    id: 3,
+    slug: "understanding-challenges-of-lazy-loading-and-code-splitting-in-react",
+    fileName: "react-lazy-loading-challenges",
+    createdAt: 1709308800000, // March 2, 2024
+    readDuration: 300,
+    name: "Understanding the Challenges of Lazy Loading and Code Splitting in React",
+    description:
+      "Explore the challenges and strategies for implementing lazy loading and code splitting in React applications, including dependency management, route-based splitting, and performance optimization techniques.",
+    keywords: "React,Lazy Loading,Code Splitting,Performance,React.lazy,Dynamic Imports,Route-Based Splitting,Optimization,Frontend,User Experience",
+  },
 ];
 
 export const notFoundBlogMeta = {
@@ -190,38 +217,134 @@ export const getDocBySlug = (slug) => {
 };
 
 export const skillsList = [
+  // Programming Languages
   {
     id: 0,
-    imgSrc: Javascript,
-    name: "JavaScript",
-    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+    imgSrc: TypeScript,
+    name: "TypeScript",
+    url: "https://www.typescriptlang.org/",
   },
   {
     id: 1,
+    imgSrc: Javascript,
+    name: "JavaScript",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    id: 2,
+    imgSrc: Go,
+    name: "Go",
+    url: "https://go.dev/",
+  },
+  {
+    id: 3,
+    imgSrc: Java,
+    name: "Java",
+    url: "https://www.java.com/",
+  },
+  {
+    id: 4,
+    imgSrc: Python,
+    name: "Python",
+    url: "https://www.python.org/",
+  },
+  // Backend Frameworks
+  {
+    id: 5,
     imgSrc: Node,
     name: "Node.js",
     url: "https://nodejs.org/en",
   },
   {
-    id: 2,
-    imgSrc: Express,
+    id: 6,
+    imgSrc: NestJS,
     name: "NestJS",
     url: "https://nestjs.com/",
   },
   {
-    id: 3,
+    id: 7,
+    imgSrc: Express,
+    name: "Express.js",
+    url: "https://expressjs.com/",
+  },
+  // Databases
+  {
+    id: 8,
+    imgSrc: MongoDB,
+    name: "MongoDB",
+    url: "https://www.mongodb.com/",
+  },
+  {
+    id: 9,
+    imgSrc: MySQL,
+    name: "MySQL",
+    url: "https://www.mysql.com/",
+  },
+  {
+    id: 10,
+    imgSrc: PostgreSQL,
+    name: "PostgreSQL",
+    url: "https://www.postgresql.org/",
+  },
+  {
+    id: 11,
+    imgSrc: Redis,
+    name: "Redis",
+    url: "https://redis.io/",
+  },
+  // DevOps & Cloud
+  {
+    id: 12,
+    imgSrc: Docker,
+    name: "Docker",
+    url: "https://www.docker.com/",
+  },
+  {
+    id: 13,
+    imgSrc: Kubernetes,
+    name: "Kubernetes",
+    url: "https://kubernetes.io/",
+  },
+  {
+    id: 14,
+    imgSrc: AWS,
+    name: "AWS",
+    url: "https://aws.amazon.com/",
+  },
+  {
+    id: 15,
     imgSrc: Git,
     name: "Git",
     url: "https://git-scm.com/",
   },
+  // Message Queues & Communication
   {
-    id: 4,
+    id: 16,
+    imgSrc: Kafka,
+    name: "Apache Kafka",
+    url: "https://kafka.apache.org/",
+  },
+  {
+    id: 17,
+    imgSrc: GRPC,
+    name: "gRPC",
+    url: "https://grpc.io/",
+  },
+  {
+    id: 18,
+    imgSrc: NGINX,
+    name: "NGINX",
+    url: "https://www.nginx.com/",
+  },
+  // Frontend (keeping existing)
+  {
+    id: 19,
     imgSrc: React,
     name: "React.js",
     url: "https://react.dev/",
   },
   {
-    id: 5,
+    id: 20,
     imgSrc: NextJs,
     name: "Next.js",
     url: "https://nextjs.org/",

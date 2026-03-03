@@ -61,6 +61,17 @@ const About = () => {
                 <Circle size={12} fill="#00ac00" stroke="#00ac00" />
                 <span>Available for new opportunities</span>
               </h3>
+              <h3 className="preference-heading">
+                <div>
+                  <span>
+                    <b> Fintech</b>
+                  </span>
+                  <span>
+                    <b> AI applications</b>
+                  </span>
+                </div>
+                <span className="preference-text">preferred</span>
+              </h3>
               <div className="contact-cta-wrapper">
                 <Link
                   className="resume-button"
