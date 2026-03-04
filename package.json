@@ -1,5 +1,5 @@
 {
-  "name": "dineshshaw",
+  "name": "shashwatksingh",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,6 +19,7 @@
     "react-web-share": "^2.0.2",
     "remark-definition-list": "^1.2.0",
     "remark-gfm": "^3.0.1",
+    "sass": "^1.97.3",
     "sharp": "^0.33.3"
   },
   "scripts": {

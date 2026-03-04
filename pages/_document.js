@@ -30,20 +30,20 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#2b5797" />
           <meta name="theme-color" content="#f8f8f8" />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://dineshshaw.in" />
-          <meta property="og:title" content="Dinesh Shaw" />
+          {/* <meta property="og:url" content="https://dineshshaw.in" /> */}
+          <meta property="og:title" content="Shashwat Kumar Singh" />
           <meta
             property="og:description"
-            content="Experienced Frontend Developer with a keen eye for detail and a demonstrated history of working in the computer software industry. Skilled in JavaScript, React.js, React Native and Node.js"
+            content="Software Engineer passionate about creating efficient, scalable solutions. Experienced in full-stack development with JavaScript, React.js, Node.js, Go, and modern backend technologies."
           />
           <meta
             property="og:image"
-            content="https://dineshshaw.in/logo512.png"
+            content="https://github.com/shashwatksingh/portfolio/blob/main/public/logo512.png"
           />
           <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="512" />
           <meta property="og:image:height" content="512" />
-          <meta property="og:site_name" content="Dinesh Shaw" />
+          <meta property="og:site_name" content="Shashwat Kumar Singh" />
           <meta property="og:locale" content="en-US" />
           <meta name="darkreader-lock" />
         </Head>
