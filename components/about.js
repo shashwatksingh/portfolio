@@ -48,7 +48,7 @@ const About = () => {
                   <b>,</b>
                 </span>
                 <span>
-                  <b> Distributed Systems Expert</b>
+                  <b> Distributed Systems<br className="mobile-break" /> Expert</b>
                   <b>,</b>
                 </span>
                 <span>

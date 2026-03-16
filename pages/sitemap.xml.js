@@ -3,7 +3,7 @@ import { blogsList } from "../utils";
 const Sitemap = () => null;
 
 export const getServerSideProps = async ({ res }) => {
-  const BASE_URL = "https://dineshshaw.in";
+  const BASE_URL = "https://shashwatksingh.com";
 
   const staticFiles = ["", "/work", "/blogs"];
 

@@ -30,7 +30,7 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#2b5797" />
           <meta name="theme-color" content="#f8f8f8" />
           <meta property="og:type" content="website" />
-          {/* <meta property="og:url" content="https://dineshshaw.in" /> */}
+          <meta property="og:url" content="https://shashwatksingh.com" />
           <meta property="og:title" content="Shashwat Kumar Singh" />
           <meta
             property="og:description"
