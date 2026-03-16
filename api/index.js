@@ -1,6 +1,6 @@
 import axios, { } from 'axios';
 
-const baseUrl = 'https://api.dineshshaw.in/api';
+const baseUrl = 'https://api.shashwatksingh.com/api';
 
 const getBlogViews = (id, signal) =>
     axios.get(`${baseUrl}/views/${id}`, { signal })

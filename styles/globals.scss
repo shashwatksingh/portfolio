@@ -672,6 +672,10 @@ body {
     margin: 0;
   }
 
+  .mobile-break {
+    display: none;
+  }
+
   .about-section-inner .about-main {
     height: calc(100vh - 300px);
     min-height: 500px;
@@ -695,8 +699,10 @@ body {
       }
 
       div {
-        display: inline;
+        display: inline-block;
         position: relative;
+        min-height: 2.2em;
+        vertical-align: top;
 
         span {
           animation: changeword 6s linear infinite;
@@ -1304,6 +1310,10 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .mobile-break {
+    display: inline !important;
+  }
+
   #__next {
     &::-webkit-scrollbar {
       width: 0px !important;
@@ -1435,7 +1445,7 @@ body {
         }
 
         h1 {
-          font-size: 28px !important;
+          font-size: 18px !important;
           color: rgb(var(--primary-color));
           margin: 0;
           padding-bottom: 4px;
@@ -1549,7 +1559,7 @@ body {
           div {
             display: block;
             overflow: hidden;
-            height: 60px;
+            height: 90px;
             width: 334px;
             margin-top: 20px;
             animation: peakUpItem ease 0.2s both;
@@ -1724,13 +1734,16 @@ body {
     }
   }
 
+  .project-section {
+    li {
+      width: 100%;
+    }
+  }
+
   .project-card {
     width: 100%;
     height: auto;
-    min-height: 380px;
     animation: fadeInBlur ease both;
-    animation-timeline: view();
-    animation-range: entry 30% cover 70%;
 
     .project-card-top {
       .project-details {
