@@ -31,7 +31,7 @@ const NameCard = () => {
           <Image className="name-logo-bottom" src={logo} alt="logo" priority />
           <div>
             <h1>Shashwat Kumar Singh</h1>
-            <h2>Senior Backend Engineer</h2>
+            <h2>Senior Full Stack Engineer</h2>
             <span>London, UK  |  🇬🇧</span>
           </div>
         </div>

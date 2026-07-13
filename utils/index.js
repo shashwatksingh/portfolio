@@ -26,6 +26,9 @@ import Kafka from "../assets/svg/kafka.svg";
 import GRPC from "../assets/svg/grpc.svg";
 import NGINX from "../assets/svg/nginx.svg";
 import Git from "../assets/svg/git.svg";
+import Spring from "../assets/svg/spring.svg";
+import Terraform from "../assets/svg/terraform.svg";
+import GCP from "../assets/svg/gcp.svg";
 import { PenTool, Command, User } from "react-feather";
 
 export const humanizeDuration = (time) => {
@@ -39,13 +42,13 @@ export const resumeLink =
 export const timeline = [
   {
     orgId: 0,
-    orgName: "Edugorilla",
+    orgName: "EduGorilla",
     yearwise: [
       {
         id: 0,
         start: "Mar 2021",
         end: "May 2021",
-        position: "Frontend Intern",
+        position: "Frontend Development Intern",
       },
     ],
   },
@@ -57,19 +60,19 @@ export const timeline = [
         id: 0,
         start: "Aug 2021",
         end: "Dec 2022",
-        position: "SWE 1",
+        position: "Software Engineer 1",
       },
       {
         id: 1,
         start: "Jan 2023",
         end: "Dec 2024",
-        position: "SWE 3",
+        position: "Software Engineer 3",
       },
       {
         id: 2,
         start: "Jan 2025",
         end: "Present",
-        position: "Senior SWE",
+        position: "Senior Software Engineer",
       },
     ],
   },
@@ -203,60 +206,60 @@ export const skillsList = [
   // Programming Languages
   {
     id: 0,
-    imgSrc: TypeScript,
-    name: "TypeScript",
-    url: "https://www.typescriptlang.org/",
-  },
-  {
-    id: 1,
-    imgSrc: Javascript,
-    name: "JavaScript",
-    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  },
-  {
-    id: 2,
-    imgSrc: Go,
-    name: "Go",
-    url: "https://go.dev/",
-  },
-  {
-    id: 3,
     imgSrc: Java,
     name: "Java",
     url: "https://www.java.com/",
   },
   {
-    id: 4,
+    id: 1,
+    imgSrc: Go,
+    name: "Go",
+    url: "https://go.dev/",
+  },
+  {
+    id: 2,
     imgSrc: Python,
     name: "Python",
     url: "https://www.python.org/",
   },
+  {
+    id: 3,
+    imgSrc: Javascript,
+    name: "JavaScript",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    id: 4,
+    imgSrc: TypeScript,
+    name: "TypeScript",
+    url: "https://www.typescriptlang.org/",
+  },
   // Backend Frameworks
   {
     id: 5,
+    imgSrc: Spring,
+    name: "Spring Boot",
+    url: "https://spring.io/projects/spring-boot",
+  },
+  {
+    id: 6,
     imgSrc: Node,
     name: "Node.js",
     url: "https://nodejs.org/en",
   },
   {
-    id: 6,
+    id: 7,
     imgSrc: NestJS,
     name: "NestJS",
     url: "https://nestjs.com/",
   },
   {
-    id: 7,
+    id: 8,
     imgSrc: Express,
     name: "Express.js",
     url: "https://expressjs.com/",
   },
   // Databases
-  {
-    id: 8,
-    imgSrc: MongoDB,
-    name: "MongoDB",
-    url: "https://www.mongodb.com/",
-  },
   {
     id: 9,
     imgSrc: MySQL,
@@ -271,63 +274,81 @@ export const skillsList = [
   },
   {
     id: 11,
+    imgSrc: MongoDB,
+    name: "MongoDB",
+    url: "https://www.mongodb.com/",
+  },
+  {
+    id: 12,
     imgSrc: Redis,
     name: "Redis",
     url: "https://redis.io/",
   },
-  // DevOps & Cloud
-  {
-    id: 12,
-    imgSrc: Docker,
-    name: "Docker",
-    url: "https://www.docker.com/",
-  },
-  {
-    id: 13,
-    imgSrc: Kubernetes,
-    name: "Kubernetes",
-    url: "https://kubernetes.io/",
-  },
-  {
-    id: 14,
-    imgSrc: AWS,
-    name: "AWS",
-    url: "https://aws.amazon.com/",
-  },
-  {
-    id: 15,
-    imgSrc: Git,
-    name: "Git",
-    url: "https://git-scm.com/",
-  },
   // Message Queues & Communication
   {
-    id: 16,
+    id: 13,
     imgSrc: Kafka,
     name: "Apache Kafka",
     url: "https://kafka.apache.org/",
   },
   {
-    id: 17,
+    id: 14,
     imgSrc: GRPC,
     name: "gRPC",
     url: "https://grpc.io/",
   },
+  // DevOps & Cloud
+  {
+    id: 15,
+    imgSrc: Docker,
+    name: "Docker",
+    url: "https://www.docker.com/",
+  },
+  {
+    id: 16,
+    imgSrc: Kubernetes,
+    name: "Kubernetes",
+    url: "https://kubernetes.io/",
+  },
+  {
+    id: 17,
+    imgSrc: AWS,
+    name: "AWS",
+    url: "https://aws.amazon.com/",
+  },
   {
     id: 18,
+    imgSrc: GCP,
+    name: "Google Cloud",
+    url: "https://cloud.google.com/",
+  },
+  {
+    id: 19,
+    imgSrc: Terraform,
+    name: "Terraform",
+    url: "https://www.terraform.io/",
+  },
+  {
+    id: 20,
     imgSrc: NGINX,
     name: "NGINX",
     url: "https://www.nginx.com/",
   },
-  // Frontend (keeping existing)
   {
-    id: 19,
+    id: 21,
+    imgSrc: Git,
+    name: "Git",
+    url: "https://git-scm.com/",
+  },
+  // Frontend
+  {
+    id: 22,
     imgSrc: React,
     name: "React.js",
     url: "https://react.dev/",
   },
   {
-    id: 20,
+    id: 23,
     imgSrc: NextJs,
     name: "Next.js",
     url: "https://nextjs.org/",

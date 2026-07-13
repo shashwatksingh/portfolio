@@ -26,7 +26,7 @@ const About = () => {
         <title>Shashwat's Portfolio</title>
         <meta
           title="description"
-          content="Senior Backend Engineer with experience designing cloud-native, high-availability systems. Specialised in Node.js (NestJS), distributed architectures, payment integrations and observability."
+          content="Senior Full Stack Engineer with 5+ years of experience in designing, scaling, and owning backend systems and microservices for enterprise SaaS products. Specialised in Java, Spring Boot, Node.js, and AI-enabled backend services."
           key="desc"
         />
       </Head>
@@ -44,15 +44,19 @@ const About = () => {
               <span className="second-word">a </span> passionate
               <div>
                 <span>
-                  <b> Backend Engineer</b>
+                  <b> Senior FullStack Engineer</b>
                   <b>,</b>
                 </span>
                 <span>
-                  <b> Distributed Systems<br className="mobile-break" /> Expert</b>
+                  <b> Distributed Systems Specialist</b>
                   <b>,</b>
                 </span>
                 <span>
-                  <b> Software Engineer</b>
+                  <b> Microservices Specialist</b>
+                  <b>,</b>
+                </span>
+                <span>
+                  <b> AI Systems Builder</b>
                 </span>
               </div>
             </h1>
@@ -82,19 +86,19 @@ const About = () => {
             <AnimateText text="ABOUT ME" animate={false} />
             <ul className="about-desc">
               <li>
-                Senior Backend Engineer with <b>5+ years</b> of experience designing cloud-native, high-availability systems. Specialised in <b>Node.js (NestJS)</b>, distributed architectures, payment integrations and observability.
+                Senior Software Engineer with <b>5+ years</b> of experience designing, scaling, and owning backend systems and microservices for enterprise SaaS products.
               </li>
               <li>
-                Currently working on <b>RAG-based enterprise Knowledge Base</b> systems using <b>LangChain</b> and <b>LangGraph</b>, and building AI assistants with MCP-based orchestration.
+                Architected and led development of an <b>AI-powered enterprise knowledge platform</b> using <b>Python, LangChain, LangGraph, RAG</b>, and vector databases — significantly reducing customer support load and improving LLM response accuracy.
+              </li>
+              <li>
+                Repeatedly trusted to lead the highest-priority technical problems: real-time messaging infrastructure, payment systems, platform observability, and AI-enabled backend services.
               </li>
               <li>
                 Graduated from <b>Tezpur University, Assam</b> in 2020 with a B.Tech in <b>Electrical Engineering</b>.
               </li>
               <li>
-                Strong focus on reliability, data integrity, and scalable backend design. Experienced in handling <b>70M+ monthly database operations</b> with optimised performance.
-              </li>
-              <li>
-                Beyond engineering, I'm passionate about building robust systems that solve real-world problems at scale.
+                Comfortable owning ambiguous problems end-to-end and working directly with product and business stakeholders on trade-offs.
               </li>
             </ul>
           </div>
