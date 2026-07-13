@@ -34,7 +34,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="Shashwat Kumar Singh" />
           <meta
             property="og:description"
-            content="Software Engineer passionate about creating efficient, scalable solutions. Experienced in full-stack development with JavaScript, React.js, Node.js, Go, and modern backend technologies."
+            content="Senior Full Stack Engineer with 5+ years of experience in designing, scaling, and owning backend systems and microservices for enterprise SaaS products. Specialised in Java, Spring Boot, Node.js, and AI-enabled backend services (RAG, LangGraph)."
           />
           <meta
             property="og:image"
