@@ -37,7 +37,7 @@ export const humanizeDuration = (time) => {
 };
 
 export const resumeLink =
-  "https://drive.google.com/file/d/1pOwk_RQ-FI3rVvlenPJnoFfJjHQMmI-d/view?usp=sharing";
+  "https://drive.google.com/file/d/1nABXilPx4CLg4tik8YLvmzcPB2urS7Fa/view?usp=sharing";
 
 export const timeline = [
   {
