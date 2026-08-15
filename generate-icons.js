@@ -1,13 +1,13 @@
-const sharp = require('sharp');
-const fs = require('fs');
-const path = require('path');
+import sharp from 'sharp';
+import { existsSync, mkdirSync, readFileSync, copyFileSync } from 'fs';
+import { join } from 'path';
 
-const logoPath = path.join(__dirname, 'assets', 'logo.svg');
-const publicDir = path.join(__dirname, 'public');
+const logoPath = join(__dirname, 'assets', 'logo.svg');
+const publicDir = join(__dirname, 'public');
 
 // Ensure public directory exists
-if (!fs.existsSync(publicDir)) {
-  fs.mkdirSync(publicDir, { recursive: true });
+if (!existsSync(publicDir)) {
+  mkdirSync(publicDir, { recursive: true });
 }
 
 async function generateIcons() {
@@ -15,7 +15,7 @@ async function generateIcons() {
 
   try {
     // Read the SVG file
-    const svgBuffer = fs.readFileSync(logoPath);
+    const svgBuffer = readFileSync(logoPath);
 
     // Generate PNG icons with different sizes
     const icons = [
@@ -29,7 +29,7 @@ async function generateIcons() {
 
     // Generate each PNG icon
     for (const icon of icons) {
-      const outputPath = path.join(publicDir, icon.name);
+      const outputPath = join(publicDir, icon.name);
       await sharp(svgBuffer)
         .resize(icon.size, icon.size, {
           fit: 'contain',
@@ -41,7 +41,7 @@ async function generateIcons() {
     }
 
     // Generate favicon.ico (multi-size)
-    const faviconPath = path.join(publicDir, 'favicon.ico');
+    const faviconPath = join(publicDir, 'favicon.ico');
     await sharp(svgBuffer)
       .resize(32, 32, {
         fit: 'contain',
@@ -52,7 +52,7 @@ async function generateIcons() {
     console.log('✅ Generated favicon.ico (32x32)');
 
     // Generate safari-pinned-tab.svg (monochrome version)
-    const safariSvgPath = path.join(publicDir, 'safari-pinned-tab.svg');
+    const safariSvgPath = join(publicDir, 'safari-pinned-tab.svg');
     
     // Create a monochrome version by converting to grayscale and then to SVG
     // For simplicity, we'll just copy the original SVG as a monochrome version
@@ -69,12 +69,12 @@ async function generateIcons() {
       .then(async (buffer) => {
         // Convert back to SVG format (simplified approach)
         // For a proper monochrome SVG, manual editing might be needed
-        fs.copyFileSync(logoPath, safariSvgPath);
+        copyFileSync(logoPath, safariSvgPath);
         console.log('✅ Generated safari-pinned-tab.svg (copied from original)');
       });
 
     // Generate preview.png (social media preview)
-    const previewPath = path.join(publicDir, 'preview.png');
+    const previewPath = join(publicDir, 'preview.png');
     await sharp(svgBuffer)
       .resize(1200, 630, {
         fit: 'contain',

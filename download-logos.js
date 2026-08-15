@@ -1,7 +1,7 @@
-const https = require('https');
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
+import https from 'https';
+import http from 'http';
+import { existsSync, mkdirSync, createWriteStream, unlink } from 'fs';
+import { join, basename } from 'path';
 
 // Logo sources from CDNs and official sources
 const logos = [
@@ -82,11 +82,11 @@ const logos = [
   }
 ];
 
-const outputDir = path.join(__dirname, 'assets', 'svg');
+const outputDir = join(__dirname, 'assets', 'svg');
 
 // Ensure output directory exists
-if (!fs.existsSync(outputDir)) {
-  fs.mkdirSync(outputDir, { recursive: true });
+if (!existsSync(outputDir)) {
+  mkdirSync(outputDir, { recursive: true });
 }
 
 function downloadFile(url, filepath) {
@@ -107,17 +107,17 @@ function downloadFile(url, filepath) {
         return;
       }
 
-      const fileStream = fs.createWriteStream(filepath);
+      const fileStream = createWriteStream(filepath);
       response.pipe(fileStream);
 
       fileStream.on('finish', () => {
         fileStream.close();
-        console.log(`✓ Downloaded: ${path.basename(filepath)}`);
+        console.log(`✓ Downloaded: ${basename(filepath)}`);
         resolve();
       });
 
       fileStream.on('error', (err) => {
-        fs.unlink(filepath, () => {});
+        unlink(filepath, () => {});
         reject(err);
       });
     }).on('error', (err) => {
@@ -130,7 +130,7 @@ async function downloadAllLogos() {
   console.log('Starting logo downloads...\n');
   
   for (const logo of logos) {
-    const filepath = path.join(outputDir, logo.filename);
+    const filepath = join(outputDir, logo.filename);
     
     try {
       await downloadFile(logo.url, filepath);
