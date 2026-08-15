@@ -9,65 +9,65 @@ importers:
   .:
     dependencies:
       '@next/third-parties':
-        specifier: ^14.2.3
+        specifier: 14.2.35
         version: 14.2.35(next@14.2.35(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.101.0))(react@18.3.1)
       '@vercel/analytics':
-        specifier: ^0.1.11
+        specifier: 0.1.11
         version: 0.1.11(react@18.3.1)
       '@vercel/speed-insights':
-        specifier: ^1.0.10
+        specifier: 1.3.1
         version: 1.3.1(next@14.2.35(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.101.0))(react@18.3.1)
       axios:
-        specifier: ^1.6.8
+        specifier: 1.18.1
         version: 1.18.1
       clsx:
-        specifier: ^2.1.0
+        specifier: 2.1.1
         version: 2.1.1
       date-fns:
-        specifier: ^2.30.0
+        specifier: 2.30.0
         version: 2.30.0
       next:
-        specifier: ^14.2.3
+        specifier: 14.2.35
         version: 14.2.35(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.101.0)
       react:
-        specifier: ^18.3.1
+        specifier: 18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.3.1
+        specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
       react-feather:
-        specifier: ^2.0.10
+        specifier: 2.0.10
         version: 2.0.10(react@18.3.1)
       react-intersection-observer:
-        specifier: ^9.10.2
-        version: 9.16.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 9.10.2
+        version: 9.10.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-markdown:
-        specifier: ^8.0.7
+        specifier: 8.0.7
         version: 8.0.7(@types/react@19.2.17)(react@18.3.1)
       react-syntax-highlighter:
-        specifier: ^15.5.0
+        specifier: 15.6.6
         version: 15.6.6(react@18.3.1)
       react-web-share:
-        specifier: ^2.0.2
+        specifier: 2.0.2
         version: 2.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       remark-definition-list:
-        specifier: ^1.2.0
+        specifier: 1.2.0
         version: 1.2.0(micromark@3.2.0)(remark-parse@10.0.2)(unified@10.1.2)
       remark-gfm:
-        specifier: ^3.0.1
+        specifier: 3.0.1
         version: 3.0.1
       sass:
-        specifier: ^1.97.3
+        specifier: 1.101.0
         version: 1.101.0
       sharp:
-        specifier: ^0.33.3
+        specifier: 0.33.5
         version: 0.33.5
     devDependencies:
       eslint:
-        specifier: ^8.39.0
+        specifier: 8.57.1
         version: 8.57.1
       eslint-config-next:
-        specifier: ^14.2.3
+        specifier: 14.2.35
         version: 14.2.35(eslint@8.57.1)(typescript@6.0.3)
 
 packages:
@@ -1898,11 +1898,11 @@ packages:
     peerDependencies:
       react: '>=16.8.6'
 
-  react-intersection-observer@9.16.0:
-    resolution: {integrity: sha512-w9nJSEp+DrW9KmQmeWHQyfaP6b03v+TdXynaoA964Wxt7mdR3An11z4NNCQgL4gKSK7y1ver2Fq+JKH6CWEzUA==}
+  react-intersection-observer@9.10.2:
+    resolution: {integrity: sha512-j2hGADK2hCbAlfaq6L3tVLb4iqngoN7B1fT16MwJ4J16YW/vWLcmAIinLsw0lgpZeMi4UDUWtHC9QDde0/P1yQ==}
     peerDependencies:
-      react: ^17.0.0 || ^18.0.0 || ^19.0.0
-      react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     peerDependenciesMeta:
       react-dom:
         optional: true
@@ -4396,7 +4396,7 @@ snapshots:
       prop-types: 15.8.1
       react: 18.3.1
 
-  react-intersection-observer@9.16.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-intersection-observer@9.10.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
     optionalDependencies:
