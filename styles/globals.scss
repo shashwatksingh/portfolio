@@ -1,3 +1,20 @@
+// ─── Rotating title carousel config ──────────────────────────────────────────
+@use "sass:math";
+
+$title-count:        4;    // number of <span> titles in the JSX carousel
+$title-slot:         2s;   // desktop: time allocated per title
+$title-slot-mobile:  3s;   // mobile:  time allocated per title
+
+// Derived durations
+$title-duration:        $title-slot        * $title-count; // 8s
+$title-duration-mobile: $title-slot-mobile * $title-count; // 12s
+
+// Keyframe stop percentages — derived from $title-count so they always fit
+$title-slot-pct:    math.percentage(math.div(1, $title-count));    // 25%
+$title-fadein-pct:  math.percentage(math.div(0.5,  $title-count)); // 12.5%
+$title-hold-pct:    math.percentage(math.div(0.85, $title-count)); // 21.25%
+// ─────────────────────────────────────────────────────────────────────────────
+
 * {
   -webkit-tap-highlight-color: transparent;
   margin: 0;
@@ -495,7 +512,7 @@ body {
   }
 
   .available-to-contact {
-    margin-top: 114px;
+    margin-top: 80px;
 
     .contact-heading,
     .contact-cta {
@@ -705,7 +722,7 @@ body {
         vertical-align: top;
 
         span {
-          animation: changeword 6s linear infinite;
+          animation: changeword $title-duration linear infinite;
           position: absolute;
           left: 8px;
           opacity: 0;
@@ -718,14 +735,10 @@ body {
           }
         }
 
-        span:nth-child(1) {
-          animation-delay: 0s;
-        }
-        span:nth-child(2) {
-          animation-delay: 2s;
-        }
-        span:nth-child(3) {
-          animation-delay: 4s;
+        @for $i from 1 through $title-count {
+          span:nth-child(#{$i}) {
+            animation-delay: $title-slot * ($i - 1);
+          }
         }
       }
     }
@@ -1559,8 +1572,8 @@ body {
           div {
             display: block;
             overflow: hidden;
-            height: 90px;
-            width: 334px;
+            height: 130px;
+            width: 100%;
             margin-top: 20px;
             animation: peakUpItem ease 0.2s both;
             animation-delay: 0.7s;
@@ -1569,17 +1582,16 @@ body {
               text-align: center;
               top: auto;
               left: 50%;
-              font-size: 32px;
-              animation: changewordmobile 9s linear infinite;
+              font-size: clamp(22px, 7vw, 32px);
+              white-space: normal;
+              word-break: break-word;
+              width: 90%;
+              animation: changewordmobile $title-duration-mobile linear infinite;
 
-              &:nth-child(1) {
-                animation-delay: 0.25s;
-              }
-              &:nth-child(2) {
-                animation-delay: 3.25s;
-              }
-              &:nth-child(3) {
-                animation-delay: 6.25s;
+              @for $i from 1 through $title-count {
+                &:nth-child(#{$i}) {
+                  animation-delay: 0.25s + $title-slot-mobile * ($i - 1);
+                }
               }
             }
           }
@@ -1883,16 +1895,16 @@ body {
     transform: translateY(10px) translateZ(0);
     opacity: 0;
   }
-  3.33% {
+  #{$title-fadein-pct} {
     opacity: 1;
     transform: translateY(0) translateZ(0);
   }
-  30% {
+  #{$title-hold-pct} {
     opacity: 1;
     filter: blur(0px);
     transform: translateY(0) translateZ(0);
   }
-  33.33% {
+  #{$title-slot-pct} {
     opacity: 0;
     transform: translateY(-10px) translateZ(0);
     filter: blur(3px);
@@ -1904,16 +1916,16 @@ body {
     transform: translateX(-50%) translateY(10px) translateZ(0);
     opacity: 0;
   }
-  2% {
+  #{$title-fadein-pct} {
     opacity: 1;
     transform: translateX(-50%) translateY(0) translateZ(0);
   }
-  30% {
+  #{$title-hold-pct} {
     opacity: 1;
     transform: translateX(-50%) translateY(0) translateZ(0);
     filter: blur(0px);
   }
-  32% {
+  #{$title-slot-pct} {
     opacity: 0;
     transform: translateX(-50%) translateY(-10px) translateZ(0);
     filter: blur(3px);
