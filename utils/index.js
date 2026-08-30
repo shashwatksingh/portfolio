@@ -85,7 +85,7 @@ export const projects = [
     name: "Qelaura Backend",
     description: "Enterprise Social Content Management Platform built with TypeScript, NestJS, MongoDB, MySQL, Redis, AWS, Docker, and gRPC",
     codeUrl: "https://github.com/SamvetaOrg/arjun",
-    websiteUrl: "https://api.samveta.qelaura.com/",
+    websiteUrl: "",
     type: "",
     detailsUrl: "/projects/arjun-backend-microservices",
   },
