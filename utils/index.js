@@ -29,6 +29,9 @@ import Git from "../assets/svg/git.svg";
 import Spring from "../assets/svg/spring.svg";
 import Terraform from "../assets/svg/terraform.svg";
 import GCP from "../assets/svg/gcp.svg";
+import LangChain from "../assets/svg/langchain.svg";
+import FastAPI from "../assets/svg/fastapi.svg";
+import OpenSearch from "../assets/svg/opensearch.svg";
 import { PenTool, Command, User } from "react-feather";
 
 export const humanizeDuration = (time) => {
@@ -37,7 +40,7 @@ export const humanizeDuration = (time) => {
 };
 
 export const resumeLink =
-  "https://drive.google.com/file/d/1nABXilPx4CLg4tik8YLvmzcPB2urS7Fa/view?usp=sharing";
+  "https://drive.google.com/file/d/1D1041R2cT90dLrPSPFjhFhuPGSJJjs2Z/view";
 
 export const timeline = [
   {
@@ -71,6 +74,18 @@ export const timeline = [
       {
         id: 2,
         start: "Jan 2025",
+        end: "Aug 2026",
+        position: "Senior Software Engineer",
+      },
+    ],
+  },
+  {
+    orgId: 2,
+    orgName: "Taylor and Francis",
+    yearwise: [
+      {
+        id: 0,
+        start: "Sep 2026",
         end: "Present",
         position: "Senior Software Engineer",
       },
@@ -352,6 +367,25 @@ export const skillsList = [
     imgSrc: NextJs,
     name: "Next.js",
     url: "https://nextjs.org/",
+  },
+  // AI / Search
+  {
+    id: 24,
+    imgSrc: LangChain,
+    name: "LangChain",
+    url: "https://www.langchain.com/",
+  },
+  {
+    id: 25,
+    imgSrc: FastAPI,
+    name: "FastAPI",
+    url: "https://fastapi.tiangolo.com/",
+  },
+  {
+    id: 26,
+    imgSrc: OpenSearch,
+    name: "OpenSearch",
+    url: "https://opensearch.org/",
   },
 ];
 
