@@ -573,7 +573,8 @@ body {
       margin: 15px 0;
 
       .contact-cta,
-      .resume-button {
+      .resume-button,
+      .schedule-button {
         background-color: rgb(var(--primary-color));
         color: rgb(var(--light-color));
         padding: 8.25px 14px;
@@ -584,6 +585,7 @@ body {
         gap: 8px;
         cursor: pointer;
         transition: all 0.2s ease;
+        font-family: inherit;
 
         span {
           font-weight: 500;
@@ -620,6 +622,27 @@ body {
           stroke: rgb(var(--primary-color));
           transform: rotate(45deg);
         }
+        @media (hover: hover) {
+          &:hover {
+            border: 1px solid rgba(var(--primary-color), 0.75);
+          }
+        }
+      }
+
+      .schedule-button {
+        border: 1px solid rgba(var(--primary-color), 0.25);
+        background-color: rgba(var(--primary-color), 0.25) !important;
+        padding: 7px 14px;
+        gap: 5px;
+
+        span {
+          color: rgb(var(--primary-color)) !important;
+        }
+
+        svg {
+          stroke: rgb(var(--primary-color));
+        }
+
         @media (hover: hover) {
           &:hover {
             border: 1px solid rgba(var(--primary-color), 0.75);
@@ -1519,6 +1542,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-bottom: 6svh;
         animation: fadeInBlur ease reverse;
         animation-timeline: view();
         animation-range: cover 10%;
@@ -1613,7 +1637,8 @@ body {
             justify-content: center;
 
             .resume-button,
-            .contact-cta {
+            .contact-cta,
+            .schedule-button {
               span {
                 font-size: 16px;
                 font-weight: 500;
@@ -1685,6 +1710,8 @@ body {
   }
 
   .contact-section {
+    padding-bottom: 10svh;
+
     .emails {
       h2 {
         font-size: 16px;
