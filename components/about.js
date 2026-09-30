@@ -1,14 +1,14 @@
 import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { Circle, ChevronsDown, ChevronsUp } from "react-feather";
+import { Circle, ChevronsDown, ChevronsUp, Calendar } from "react-feather";
 
 import Skills from "./skills";
 import Contact from "./contact";
 import AnimateText from "./animateText";
 
 import CheckMarkIcon from "../assets/icons/checkMarkIcon";
-import { resumeLink, timeline } from "../utils";
+import { resumeLink, timeline, scheduleMeetLink } from "../utils";
 
 const About = () => {
   const [animateContact, setAnimateContact] = useState(false);
@@ -18,6 +18,10 @@ const About = () => {
 
     if (!animateContact) setTimeout(() => setAnimateContact(false), 1500);
     setAnimateContact(true);
+  };
+
+  const onClickScheduleMeet = () => {
+    window.open(scheduleMeetLink, "_blank");
   };
 
   return (
@@ -78,6 +82,10 @@ const About = () => {
                 <button className="contact-cta" onClick={onClickContact}>
                   <ChevronsDown size={18} strokeWidth={2.5} />
                   <span>Contact Me</span>
+                </button>
+                <button className="schedule-button" onClick={onClickScheduleMeet}>
+                  <Calendar size={16} strokeWidth={2.5} />
+                  <span>Schedule Meet</span>
                 </button>
               </div>
             </div>

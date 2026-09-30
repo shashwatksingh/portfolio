@@ -9,7 +9,6 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import Navbar from "../components/navbar";
 import NameCard from "../components/nameCard";
 import Footer from "../components/footer";
-
 import { GlobalContextProvider } from "../contexts";
 
 import { whiteListRoutes, navbarRoutes } from "../utils";

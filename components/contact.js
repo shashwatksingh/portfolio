@@ -32,7 +32,7 @@ const Contact = ({ animate }) => {
           <div className="emails">
             <AnimateText text="EMAIL" animate={false} />
             <h2>
-              Interested in talking? Let's do it, feel free to drop me a message
+              Interested in talking? Let&apos;s do it, feel free to drop me a message
               on your trusty typewriter and we can connect at a suitable time.
             </h2>
             <a href="mailto:shashwatksingh.27@gmail.com" target="_blank">

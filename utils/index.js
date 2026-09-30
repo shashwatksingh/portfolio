@@ -42,6 +42,8 @@ export const humanizeDuration = (time) => {
 export const resumeLink =
   "https://drive.google.com/file/d/1D1041R2cT90dLrPSPFjhFhuPGSJJjs2Z/view";
 
+export const scheduleMeetLink = "https://calendly.com/shashwatksingh-27/30min";
+
 export const timeline = [
   {
     orgId: 0,
